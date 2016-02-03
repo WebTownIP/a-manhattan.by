@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+html
+  head
+    title Антикафе "Manhattan"
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    )
+    meta(charset="utf-8")
+    meta(
+      name="description"
+      content="Антикафе 'Manhattan' - это уютное место, созданное для учебы, работы, творчества и необычного отдыха! И даже в самые дождливые и холодные дни в антикафе Manhattan всегда солнечно и ясно!"
+    )
+    meta(
+      name="keywords"
+      content="антикафе, Гомель, тренинги"
+    )
+
+    link(
+      rel="icon"
+      href="assets/images/favicon.ico"
+    )
+
+    link(
+      rel="stylesheet"
+      href="assets/libs/Materialize/dist/css/materialize.min.css"
+      media="screen,projection"
+      type="text/css"
+    )
+    link(
+      rel="stylesheet"
+      href="assets/libs/font-awesome/css/font-awesome.min.css"
+      media="screen,projection"
+      type="text/css"
+    )
+    link(
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/index.min.css"
+    )
+  body
+    header
+      .parallax-container
+        .parallax
+          img(src="assets/images/parallax.jpg")
+          .valign-wrapper
+            h1.teal-text.center-align.valign
+              | Антикафе "Manhattan"
+    main
+      .row
+        h4.center-align Что здесь хорошего?
+        .row
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-comments.fa-3x.teal-text
+              h5 Новые знакомства
+              p.
+                Играй, общайся, заводи новых знакомых, друзей или даже ищи свою вторую половинку
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-gamepad.fa-3x.teal-text
+              h5 Игры
+              p.
+                Xbox, Xbox Kinect, Guitar Hero, большое количество популярных видео- и настольных игр
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-connectdevelop.fa-3x.teal-text
+              h5 Развитие
+              p Тренинги от специалистов различных направлений (бизнес, психология, IT и др)
+        .row
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-home.fa-3x.teal-text
+              h5 Домашний уют
+              p.
+                Здесь мягкие диваны и мешки, в которых чувствуешь себя как дома
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-coffee.fa-3x.teal-text
+              h5 Вкусняшки
+              p.
+                Большое количество печенек, сушек, сухариков, джемов, чая и кофе
+          .col.l4.m4.offset-m4.s12.group
+            .center-align
+              i.fa.fa-smile-o.fa-3x.teal-text
+              h5 Забота
+              p.
+                Администраторы, которые помогут забыть обо всем, пока находитесь в "Manhattan"
+      .row.price
+        .col.l4.m8.s12.offset-m2
+          .row
+            .col.l12.m12.s12
+              .card.center-align.teal.lighten-2
+                .card-content
+                  h5 Стоимость услуг
+                  p Время работы с 10.00 – до 23.00 
+                  p 1-й час = 25 тыс.
+                  h5 Удачный час
+                  p 10:00 - 15:00
+                  p 1-н час = 15 тыс.
+        .col.l4.m8.s12.offset-m2
+          .row
+            .col.l12.m12.s12
+              .card.center-align.teal.lighten-2
+                .card-content
+                  h5 Абонементы
+                  ul
+                    li 10 часов = 220 тыс. (экономия 30 тыс.)
+                    li 25 часов = 500 тыс. (экономия  125тыс.)
+                    li 50 часов = 900 тыс. (экономия 325 тыс.)
+        .col.l4.m8.s12.offset-m2
+          .row
+            .col.l12.m12.s12
+              .card.center-align.teal.lighten-2
+                .card-content
+                  h5 Аренда
+                  p Возможна аренда отдельных зон Таймтеррии:
+                  ul
+                    li Основной зал (до 50 человек)
+                    li Чилаут зона  (до 25 человек)
+                    li Таймтеррия   (до 75 человек)
+                  p Аренда таймзон под ключ оговаривается отдельно.
+      .row
+        .col.l12.m12.s12.map
+    footer
+      .row
+        .col.l12.m12.s12.center-align
+          a.btn-floating.btn-large.waves-effect.waves-light(
+            href="https://vk.com/antimanhattan"
+            target="_blank"
+          )
+            i.fa.fa-vk
+          a.btn-floating.btn-large.waves-effect.waves-light(
+            href="http://ok.ru/group/52918018572450"
+            target="_blank"
+          )
+            i.fa.fa-odnoklassniki
+          a.btn-floating.btn-large.waves-effect.waves-light  
+            i.fa.fa-instagram
+          a.btn-floating.btn-large.waves-effect.waves-light(
+            href="https://facebook.com/groups/157773357917795/"
+            target="_blank"
+          )
+            i.fa.fa-facebook
+      .row
+        .col.l12.m12.s12.center-align
+          p.white-text © 2015 Антикафе "Manhattan". Все права защищены.
+      .row
+        .col.l12.m12.s12.center-align
+          include _counter.jade
+
+    .spinner.on
+      .center-align
+        .preloader-wrapper.big.active
+          .spinner-layer.spinner-green-only
+            .circle-clipper.left
+              .circle
+            .gap-patch
+              .circle
+            .circle-clipper.right
+              .circle
+    script(
+      type="text/javascript"
+      src="assets/libs/jquery/dist/jquery.min.js"
+    )
+    script(
+      type="text/javascript"
+      src="assets/libs/Materialize/dist/js/materialize.min.js"
+    )
+    script(
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js"
+    )
+    script(
+      type="text/javascript"
+      src="scripts/index.js"
+    )

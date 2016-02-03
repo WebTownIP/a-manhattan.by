@@ -1,0 +1,23 @@
+{
+  "name": "anticafe",
+  "version": "0.0.0",
+  "description": "landing for anticafe",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp"
+  },
+  "author": "Mikita Siadykh mikita_siadykh@epam.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {},
+  "private": true,
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-csso": "~1.0.0",
+    "gulp-jade": "~1.0.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-sass": "~2.0.4",
+    "gulp-watch": "~4.3.5",
+    "gulp-continuous-concat": "~0.1.1"
+  }
+}

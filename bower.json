@@ -1,0 +1,24 @@
+{
+  "name": "a-manhattan.by",
+  "description": "landing for anticafe",
+  "main": "index.js",
+  "authors": [
+    "nikita.sedyx.94@gmail.com"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "a-manhattan.by",
+  "moduleType": [],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.1",
+    "fontawesome": "~4.5.0",
+    "jquery": "2.1.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/libs",
+    "test",
+    "tests"
+  ]
+}
